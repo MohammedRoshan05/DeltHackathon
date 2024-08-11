@@ -45,20 +45,14 @@ public class GitHubLogin extends AppCompatActivity {
                                     new OnSuccessListener<AuthResult>() {
                                         @Override
                                         public void onSuccess(AuthResult authResult) {
-                                            // User is signed in.
-                                            // IdP data available in
-                                            // authResult.getAdditionalUserInfo().getProfile().
-                                            // The OAuth access token can also be retrieved:
-                                            // ((OAuthCredential)authResult.getCredential()).getAccessToken().
-                                            // The OAuth secret can be retrieved by calling:
-                                            // ((OAuthCredential)authResult.getCredential()).getSecret().
+
                                         }
                                     })
                             .addOnFailureListener(
                                     new OnFailureListener() {
                                         @Override
                                         public void onFailure(@NonNull Exception e) {
-                                            // Handle failure.
+
                                         }
                                     });
                 }else{
@@ -70,19 +64,12 @@ public class GitHubLogin extends AppCompatActivity {
 
         Task<AuthResult> pendingResultTask = firebaseAuth.getPendingAuthResult();
         if (pendingResultTask != null) {
-            // There's something already here! Finish the sign-in for your user.
             pendingResultTask
                     .addOnSuccessListener(
                             new OnSuccessListener<AuthResult>() {
                                 @Override
                                 public void onSuccess(AuthResult authResult) {
-                                    // User is signed in.
-                                    // IdP data available in
-                                    // authResult.getAdditionalUserInfo().getProfile().
-                                    // The OAuth access token can also be retrieved:
-                                    // ((OAuthCredential)authResult.getCredential()).getAccessToken().
-                                    // The OAuth secret can be retrieved by calling:
-                                    // ((OAuthCredential)authResult.getCredential()).getSecret().
+
                                 }
                             })
                     .addOnFailureListener(
@@ -93,8 +80,7 @@ public class GitHubLogin extends AppCompatActivity {
                                 }
                             });
         } else {
-            // There's no pending result so you need to start the sign-in flow.
-            // See below.
+
         }
 
     }
