@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "524197763902",
+    "project_id": "deltahackathonfinale",
+    "storage_bucket": "deltahackathonfinale.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524197763902:android:f51ed946ccf2c78ff8aa6f",
+        "android_client_info": {
+          "package_name": "com.example.deltahackathonfinal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkyj6MW5Jy44Q8W0lou5Cwiv9YILLzKRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
